@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanderlei Silva | Desenvolvedor Frontend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <div class="progress-bar" id="progressBar"></div>
+
+    <div class="particulas"></div>
+
+    <div class="mascara-formulario" id="mascaraFormulario" onclick="esconderFormulario()"></div>
+
+    <nav class="navegacao" id="navbar">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link active">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#habilidades" class="menu-link">Habilidades</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contato" class="menu-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./img/Vanderlei.png" alt="Vanderlei Silva" class="foto-perfil">
+        <h1>Vanderlei Silva</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front-End</p>
+        <p class="hero-description">
+            "Transformando ideias em experiências digitais."
+        </p>
+        <div class="hero-buttons">
+            <a href="#projetos" class="btn btn-primary">
+                <i class="fas fa-rocket"></i>
+                Ver Projetos
+            </a>
+            <button onclick="mostrarFormulario()" class="btn btn-secondary">
+                <i class="fas fa-paper-plane"></i>
+                Fale Comigo
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </main>
+
+    <section id="sobre" class="sobre fade-in">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-container">
+            <div class="sobre-caixa">
+                <p class="sobre-paragrafo">
+                    Sou desenvolvedor frontend apaixonado por criar interfaces digitais que não apenas impressionam
+                    visualmente, mas também oferecem experiências excepcionais aos usuários. Com expertise em HTML5,
+                    CSS3,
+                    JavaScript, transformo conceitos complexos em soluções web elegantes e funcionais.
+                </p>
+                <p class="sobre-paragrafo" style="margin-top: 1.5rem;">
+                    Minha abordagem combina design moderno com performance otimizada, sempre focando na usabilidade
+                    e acessibilidade para garantir que cada projeto atinja seu máximo potencial.
+                </p>
+            </div>
+            <div class="sobre-stats">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Projetos Concluídos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1+</span>
+                    <span class="stat-label">Anos de Experiência</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Projetos Responsivos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Suporte Dedicado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="habilidades fade-in">
+        <h2>Habilidades Técnicas</h2>
+        <ul class="skills">
+            <li class="skill-item">
+                <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="HTML5">
+                <div class="skill-name">HTML5</div>
+            </li>
+            <li class="skill-item">
+                <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3">
+                <div class="skill-name">CSS3</div>
+            </li>
+            <li class="skill-item">
+                <img src="https://img.icons8.com/fluency/48/javascript.png" alt="JavaScript">
+                <div class="skill-name">JavaScript</div>
+            </li>
+            <li class="skill-item">
+                <img src="https://img.icons8.com/color/48/git.png" alt="Git">
+                <div class="skill-name">Git</div>
+            </li>
+            <li class="skill-item">
+                <img src="https://img.icons8.com/ios-glyphs/30/github.png" alt="GitHub" style="filter: invert(1);">
+                <div class="skill-name">GitHub</div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="projetos" class="projetos fade-in">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./img/Anotação 2025-08-11 210309.png" alt="CodeConnect 2025" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">CodeConnect 2025</h3>
+                    <p class="paragrafo-projetos">
+                        O **CodeConnect 2025** é um evento anual que reúne desenvolvedores, designers, startups e
+                        empresas para compartilhar conhecimento, fazer networking e explorar o futuro da tecnologia.
+                        Este projeto é a **landing page oficial** do evento.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://vanderleisilva88.github.io/Land-page-ficticia/" class="project-link primary"
+                            target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Demo
+                        </a>
+                        <a href="https://github.com/VanderleiSilva88/Land-page-ficticia" class="project-link secondary"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                            Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/mario.png" alt="Portal de Viagens" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Mario Bros serviços</h3>
+                    <p class="paragrafo-projetos">
+                        Projeto fictício inspirado no universo de Mario Bros 🏁🍄 — um projeto voltado para apresentar
+                        serviços de encanamento de forma divertida, responsiva e interativa.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JAVA SCRIPT</span>
+                        <span class="tech-tag">FORMCARRY</span>
+                        <span class="tech-tag">WHATSAPP API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://vanderleisilva88.github.io/Mario-Bros/" class="project-link primary"
+                            target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Demo
+                        </a>
+                        <a href="https://github.com/VanderleiSilva88/Mario-Bros" class="project-link secondary"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                            Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/Anotação 2025-08-15 114439.png" alt="Microsoft Clone" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">LIsta de Compras</h3>
+                    <p class="paragrafo-projetos">
+                        Um aplicativo simples e funcional para gerenciar sua lista de compras, desenvolvido com
+                        **HTML**, **CSS** e **JavaScript** puro.
+                        Permite adicionar, marcar como comprado, remover e organizar os itens, com salvamento automático
+                        no navegador usando **LocalStorage**.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS </span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">LocalStorage</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://vanderleisilva88.github.io/Lista-de-compras/" class="project-link primary"
+                            target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Demo
+                        </a>
+                        <a href="https://github.com/VanderleiSilva88/Lista-de-compras" class="project-link secondary"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                            Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <div class="projetos-imagem"
+                    style="background: var(--gradiente); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-plus" style="font-size: 3rem; color: white;"></i>
+                </div>
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Próximo Projeto</h3>
+                    <p class="paragrafo-projetos">
+                        Sempre trabalhando em algo novo e inovador. Entre em contato para
+                        discutir seu próximo projeto e como posso ajudar.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Em Breve</span>
+                    </div>
+                    <div class="project-links">
+                        <button onclick="mostrarFormulario()" class="project-link primary"
+                            style="border: none; cursor: pointer;">
+                            <i class="fas fa-paper-plane"></i>
+                            Fale Comigo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato-section fade-in">
+        <h2 class="contato-titulo">Vamos Trabalhar Juntos?</h2>
+        <p class="contato-subtitle">
+            Pronto para transformar sua ideia em realidade? Entre em contato e vamos criar algo incrível juntos!
+        </p>
+        <button class="botao-contato" onclick="mostrarFormulario()">
+            <i class="fas fa-rocket"></i>
+            Iniciar Projeto
+        </button>
+
+        <div class="link-redes">
+            <a href="https://www.linkedin.com/in/vanderleisilva88/" target="_blank" class="redes" title="LinkedIn">
+                <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://w.app/vanderlei" target="_blank" class="redes" title="WhatsApp">
+                <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/wander_sj/" target="_blank" class="redes" title="Instagram">
+                <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/VanderleiSilva88" target="_blank" class="redes" title="GitHub">
+                <img src="https://img.icons8.com/ios-glyphs/30/github.png" alt="GitHub" style="filter: invert(1);">
+            </a>
+            <a href="assets/curriculo.pdf" download="Vanderlei sILVA.pdf" class="redes" target="_blank"  alt="" title="Currículo">
+             <img src="./img/cv (5).png" alt="Download Currículo"> 
+            
+          
+            </a>
+                
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <form class="formulario-contato" id="formulario" onsubmit="enviarMensagem(event)">
+        <button type="button" class="close-btn" onclick="esconderFormulario()">
+            <i class="fas fa-times"></i>
+        </button>
+        <h3 class="form-title">Entre em Contato</h3>
+
+        <div class="grupo-form">
+            <input type="text" placeholder="Seu nome completo" class="campo-form" id="nome" required>
+        </div>
+
+        <div class="grupo-form">
+            <input type="email" placeholder="Seu email (opcional)" class="campo-form" id="email">
+        </div>
+
+        <div class="grupo-form">
+            <textarea placeholder="Conte-me sobre seu projeto..." class="campo-form" rows="5" id="mensagem"
+                required></textarea>
+        </div>
+
+        <button type="submit" class="botao-form">
+            <i class="fas fa-paper-plane"></i>
+            Enviar Mensagem
+        </button>
+    </form>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#inicio" class="footer-link">Início</a>
+                <a href="#sobre" class="footer-link">Sobre</a>
+                <a href="#projetos" class="footer-link">Projetos</a>
+                <a href="#contato" class="footer-link">Contato</a>
+            </div>
+            <p class="footer-text">
+                © 2025 Vanderlei Silva — Todos os direitos reservados. Nova Serrana, MG.
+            </p>
+            <p style="color: var(--cinza); font-size: 0.9rem; margin-top: 1rem;">
+                Transformando ideias em experiências digitais incríveis
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
